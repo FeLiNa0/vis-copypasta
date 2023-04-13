@@ -2,7 +2,7 @@
 
 A vis plugin that creates keybindings for copying and pasting to the system clipboard.
 
-# Installing
+## Installing
 
 Download this repository and `require` the file from your `visrc.lua` file.
 
@@ -18,6 +18,16 @@ Then, your `visrc.lua` must load the file. For example:
 require("./vis-copypasta/copypasta.lua")
 ```
 
-## Alternative installation
+### Alternative installation
 
 It may be easier to simply copy and paste all of `copypasta.lua` into your `visrc.lua` ;)
+
+## Usage
+
+Simply type Ctrl-C and Ctrl-V.
+
+Ctrl-C will require you to press ENTER afterwards. This is a temporary bug.
+
+Ctrl-C does not work with multiple selections. It only copies the last value.
+
+All of these commands use `vis`' built-in tool `vis-clipboard`, which is cross-platform.
